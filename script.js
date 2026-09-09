@@ -29,3 +29,20 @@ if ('IntersectionObserver' in window) {
   }, { rootMargin: '-40% 0px -50% 0px', threshold: 0 });
   sections.forEach((s) => io.observe(s));
 }
+
+const leadForm = document.querySelector('#leadForm');
+if (leadForm) {
+  leadForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const data = new FormData(leadForm);
+    const text = [
+      'Olá David, quero um orçamento.',
+      `Nome: ${data.get('nome')}`,
+      `WhatsApp: ${data.get('whatsapp')}`,
+      `Serviço: ${data.get('servico')}`,
+      `Orçamento: ${data.get('orcamento')}`,
+      `Projeto: ${data.get('mensagem')}`
+    ].join('\n');
+    window.open(`https://wa.me/5511975321113?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
+  });
+}
