@@ -61,17 +61,50 @@
         <div><strong>+10 anos</strong><span>Experiência</span></div>
       </div>
     </div>
-    <aside class="about-card">
-      <div class="photo about-photo" role="img" aria-label="David Martins em retrato de estúdio"></div>
-      <p class="about-card-kicker" style="margin-top:20px">Disponível para projetos</p>
-      <h3>Texto, web e estratégia que precisam funcionar no negócio — não só na tela.</h3>
-      <ul>
-        <li>Copywriting e conteúdo editorial</li>
-        <li>Desenvolvimento web</li>
-        <li>Marketing digital e tráfego</li>
-        <li>IA aplicada à criação</li>
-      </ul>
-      <a class="text-link" href="mailto:davidmartins1399@gmail.com">davidmartins1399@gmail.com</a>
+    <aside class="about-card" id="orcamento">
+      <p class="about-card-kicker">Disponível para projetos</p>
+      <h3>Peça um orçamento</h3>
+      <p class="form-intro">Conte o que você precisa. Eu retorno no WhatsApp com uma proposta.</p>
+      <form id="leadForm" class="lead-form">
+        <label>
+          <span>Nome</span>
+          <input type="text" name="nome" required placeholder="Seu nome" autocomplete="name">
+        </label>
+        <label>
+          <span>WhatsApp</span>
+          <input type="tel" name="whatsapp" required placeholder="(11) 90000-0000" autocomplete="tel">
+        </label>
+        <label>
+          <span>Serviço</span>
+          <select name="servico" required>
+            <option value="" disabled selected>Selecione</option>
+            <option>Site / landing page</option>
+            <option>Copywriting / campanha</option>
+            <option>Conteúdo editorial</option>
+            <option>Social media</option>
+            <option>Marketing digital</option>
+            <option>Parceria publicitária</option>
+            <option>Outro</option>
+          </select>
+        </label>
+        <label>
+          <span>Orçamento estimado</span>
+          <select name="orcamento" required>
+            <option value="" disabled selected>Selecione</option>
+            <option>Até R$ 1.000</option>
+            <option>R$ 1.000 a R$ 3.000</option>
+            <option>R$ 3.000 a R$ 8.000</option>
+            <option>Acima de R$ 8.000</option>
+            <option>Ainda não defini</option>
+          </select>
+        </label>
+        <label>
+          <span>Sobre o projeto</span>
+          <textarea name="mensagem" rows="4" required placeholder="Prazo, objetivo e o que precisa ser entregue."></textarea>
+        </label>
+        <button class="btn btn-primary" type="submit">Enviar pedido</button>
+        <p class="form-note">Abre o WhatsApp com o briefing pronto.</p>
+      </form>
     </aside>
   </div>
 </section>
@@ -155,8 +188,8 @@
     <h2>VAMOS CONVERSAR<br>SOBRE O PRÓXIMO<br>PROJETO.</h2>
     <p class="lead">Recife, Pernambuco. Disponível para desenvolvimento web, redação, campanhas e conteúdo.</p>
     <div class="contact-actions">
-      <a class="btn btn-primary" href="https://wa.me/5511975321113?text=Olá%20David,%20vim%20pelo%20portfólio." target="_blank" rel="noopener">WhatsApp</a>
-      <a class="btn btn-ghost" href="mailto:davidmartins1399@gmail.com">E-mail</a>
+      <a class="btn btn-primary" href="#orcamento">Pedir orçamento</a>
+      <a class="btn btn-ghost" href="https://wa.me/5511975321113?text=Olá%20David,%20vim%20pelo%20portfólio." target="_blank" rel="noopener">WhatsApp</a>
     </div>
     <dl class="contact-list">
       <div><dt>Telefone</dt><dd><a href="tel:+5511975321113">(11) 97532-1113</a></dd></div>
