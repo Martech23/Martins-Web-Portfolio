@@ -244,9 +244,6 @@ footer { border-top: 1px solid var(--linha); padding: 22px 0 28px; color: var(--
   .hero h1 { font-size: clamp(3.4rem, 18vw, 5.4rem); }
 }
 .photo {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center top;
   border-radius: 28px;
   border: 1px solid rgba(148,163,184,.16);
 }
@@ -254,7 +251,10 @@ footer { border-top: 1px solid var(--linha); padding: 22px 0 28px; color: var(--
 .hero-portrait { position: relative; z-index: 2; justify-self: end; width: min(380px, 100%); }
 .hero-portrait .photo {
   width: 100%;
+  height: auto;
   aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center top;
   box-shadow: 0 30px 80px -30px rgba(0,0,0,.9);
 }
 @media (max-width: 860px) {
