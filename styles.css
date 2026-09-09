@@ -134,16 +134,40 @@ h2 {
 .about-meta span { color: var(--cinza); font-size: 12px; }
 .about-card {
   background: var(--azul-escuro); border: 1px solid var(--linha);
-  border-radius: 20px; padding: 32px;
+  border-radius: 20px; padding: 28px;
 }
 .about-card-kicker {
   color: var(--eletrico); font-size: 11px; letter-spacing: 0.16em;
   text-transform: uppercase; margin-bottom: 14px;
 }
-.about-card h3 { font-size: 1.4rem; line-height: 1.2; letter-spacing: -0.03em; margin-bottom: 22px; }
-.about-card ul { list-style: none; color: var(--cinza); margin-bottom: 24px; }
-.about-card li { padding: 8px 0; border-bottom: 1px solid var(--linha); }
-.text-link { color: var(--eletrico); font-size: 14px; }
+.about-card h3 { font-size: 1.4rem; line-height: 1.2; letter-spacing: -0.03em; margin-bottom: 10px; }
+.form-intro { color: var(--cinza); font-size: 14px; margin-bottom: 20px; }
+.lead-form { display: grid; gap: 12px; }
+.lead-form label { display: grid; gap: 6px; }
+.lead-form span {
+  font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--cinza);
+}
+.lead-form input,
+.lead-form select,
+.lead-form textarea {
+  width: 100%;
+  background: #05070A;
+  border: 1px solid var(--linha);
+  border-radius: 12px;
+  color: var(--branco);
+  padding: 11px 12px;
+  font: inherit;
+  font-size: 14px;
+}
+.lead-form textarea { resize: vertical; min-height: 96px; }
+.lead-form input:focus,
+.lead-form select:focus,
+.lead-form textarea:focus {
+  outline: none;
+  border-color: var(--eletrico);
+}
+.lead-form .btn { width: 100%; margin-top: 4px; }
+.form-note { color: var(--cinza); font-size: 12px; text-align: center; }
 .resume { padding: 120px 0; background: #070b12; }
 .resume-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 56px; }
 .block-title {
@@ -233,7 +257,6 @@ footer { border-top: 1px solid var(--linha); padding: 22px 0 28px; color: var(--
   aspect-ratio: 1 / 1;
   box-shadow: 0 30px 80px -30px rgba(0,0,0,.9);
 }
-.about-photo { width: 100%; aspect-ratio: 1 / 1; border-radius: 24px; }
 @media (max-width: 860px) {
   .hero-layout { grid-template-columns: 1fr; }
   .hero-portrait { justify-self: start; width: min(260px, 70%); margin-top: 8px; }
