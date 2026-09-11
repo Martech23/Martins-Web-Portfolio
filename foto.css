@@ -21,3 +21,19 @@
 .cert-photo a:hover img {
   opacity: 0.92;
 }
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo img {
+  width: 36px;
+  height: 36px;
+  border-radius: 9px;
+  flex: none;
+}
+.logo span {
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  font-size: 15px;
+}
