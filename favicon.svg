@@ -1,5 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="DM">
   <rect width="32" height="32" rx="7" fill="#05070A"/>
-  <rect x="1.2" y="1.2" width="29.6" height="29.6" rx="6" fill="none" stroke="#3B82F6" stroke-width="1.6"/>
-  <text x="16" y="22.2" text-anchor="middle" font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="13.5" font-weight="800" letter-spacing="-0.8" fill="#F8FAFC">DM</text>
+  <!-- D -->
+  <path fill="#F8FAFC" d="M6 8h5.2c4.15 0 6.7 2.35 6.7 6 0 3.65-2.55 6-6.7 6H6V8zm2.35 2.15v7.7h2.7c2.55 0 4.2-1.4 4.2-3.85 0-2.45-1.65-3.85-4.2-3.85H8.35z"/>
+  <!-- M -->
+  <path fill="#3B82F6" d="M19.1 20V8.2h2.15l2.55 7.15 2.55-7.15H28.5V20h-2.2v-8.05L23.9 20h-1.7l-2.4-8.05V20H19.1z"/>
 </svg>
