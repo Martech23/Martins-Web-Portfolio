@@ -4,3 +4,20 @@
   background-position: center top;
   background-repeat: no-repeat;
 }
+.cert-photo {
+  margin: 22px 0 8px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+}
+.cert-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: center;
+}
+.cert-photo a:hover img {
+  opacity: 0.92;
+}
