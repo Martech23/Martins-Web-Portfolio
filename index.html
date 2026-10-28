@@ -1,243 +1,117 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>David Martins — Desenvolvedor Web e Redator</title>
-<meta name="description" content="David Martins — Desenvolvedor web, redator e tráfego pago na Meta Ads. Recife. Mais de 10 anos em comunicação, copy e marketing digital.">
-<meta name="theme-color" content="#05070A">
-<link rel="icon" type="image/png" href="logo-david-martins.png">
-<link rel="apple-touch-icon" href="logo-david-martins.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="foto.css">
-</head>
-<body>
-<div class="grain" aria-hidden="true"></div>
-<header class="nav">
-  <a class="logo" href="#home" aria-label="Início"><img src="logo-david-martins.png" alt="DM" width="40" height="40"></a>
-  <nav class="nav-links" aria-label="Principal">
-    <a href="#home" class="active">Home</a>
-    <a href="#sobre">Sobre</a>
-    <a href="#curriculo">Currículo</a>
-    <a href="#certificados">Certificados</a>
-    <a href="#contato">Contato</a>
-  </nav>
-  <a class="nav-phone" href="https://wa.me/5511975321113" target="_blank" rel="noopener">11 97532-1113</a>
-  <button class="menu" id="menuBtn" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
-</header>
-<div class="mobile-nav" id="mobileNav">
-  <a href="#home">Home</a><a href="#sobre">Sobre</a><a href="#curriculo">Currículo</a><a href="#certificados">Certificados</a><a href="#contato">Contato</a>
-</div>
-<main>
-<section class="hero" id="home">
-  <div class="hero-bg" aria-hidden="true"></div>
-  <div class="hero-veil" aria-hidden="true"></div>
-  <div class="wrap hero-layout">
-    <div class="hero-copy">
-      <p class="eyebrow">Recife · Pernambuco · Brasil</p>
-      <h1>DAVID<br><span>MARTINS</span></h1>
-      <p class="role">Desenvolvedor Web &nbsp;|&nbsp; Redator &nbsp;|&nbsp; Tráfego Pago</p>
-      <p class="lead">Comunicação estratégica, copywriting, sites e campanhas de tráfego pago na Meta — Facebook e Instagram Ads — com mais de 10 anos transformando ideia em texto, campanha e presença online.</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#curriculo">Currículo</a>
-        <a class="btn btn-ghost" href="#contato">Falar agora</a>
-      </div>
-    </div>
-    <figure class="hero-portrait">
-      <img class="photo" src="foto-david.jpeg" alt="Retrato profissional de David Martins" width="760" height="760">
-    </figure>
-  </div>
-</section>
-<section class="about" id="sobre">
-  <div class="wrap about-grid">
-    <div class="about-copy">
-      <p class="eyebrow">Sobre</p>
-      <h2>PERFIL E<br>COMPETÊNCIAS</h2>
-      <p>Redator e criador de conteúdo com mais de 10 anos de experiência, com foco em comunicação estratégica, copywriting e produção de conteúdo digital para redes sociais, plataformas editoriais e campanhas.</p>
-      <p>A atuação cobre marketing digital, tráfego pago na plataforma Meta (Facebook Ads e Instagram Ads), copywriting, produção de conteúdo e uso de inteligência artificial aplicada à criação — além de apresentação de podcasts jornalísticos e produção editorial e audiovisual.</p>
-      <p>Planejo, configuro e otimizo campanhas de tráfego pago no Gerenciador de Anúncios da Meta: público, criativo, orçamento e conversão para Instagram e Facebook.</p>
-      <p>Experiência em desenvolvimento de protótipos no Figma e no Framer.</p>
-      <p>O primeiro trabalho ligado à web começou aos 16 anos. Desde então a carreira foi construída entre parcerias publicitárias, conteúdo de games, jornalismo regional e oratória.</p>
-      <div class="about-meta">
-        <div><strong>Recife, PE</strong><span>Base</span></div>
-        <div><strong>2015 → 2026</strong><span>Trajetória</span></div>
-        <div><strong>+10 anos</strong><span>Experiência</span></div>
-      </div>
-    </div>
-    <aside class="about-card" id="orcamento">
-      <p class="about-card-kicker">Disponível para projetos</p>
-      <h3>Peça um orçamento</h3>
-      <p class="form-intro">Conte o que você precisa. Eu retorno no WhatsApp com uma proposta.</p>
-      <form id="leadForm" class="lead-form">
-        <label>
-          <span>Nome</span>
-          <input type="text" name="nome" required placeholder="Seu nome" autocomplete="name">
-        </label>
-        <label>
-          <span>WhatsApp</span>
-          <input type="tel" name="whatsapp" required placeholder="(11) 90000-0000" autocomplete="tel">
-        </label>
-        <label>
-          <span>Serviço</span>
-          <select name="servico" required>
-            <option value="" disabled selected>Selecione</option>
-            <option>Tráfego pago Meta Ads</option>
-            <option>Site / landing page</option>
-            <option>UI Figma / Framer</option>
-            <option>Copywriting / campanha</option>
-            <option>Conteúdo editorial</option>
-            <option>Social media</option>
-            <option>Marketing digital</option>
-            <option>Parceria publicitária</option>
-            <option>Outro</option>
-          </select>
-        </label>
-        <label>
-          <span>Orçamento estimado</span>
-          <select name="orcamento" required>
-            <option value="" disabled selected>Selecione</option>
-            <option>Até R$ 1.000</option>
-            <option>R$ 1.000 a R$ 3.000</option>
-            <option>R$ 3.000 a R$ 8.000</option>
-            <option>Acima de R$ 8.000</option>
-            <option>Ainda não defini</option>
-          </select>
-        </label>
-        <label>
-          <span>Sobre o projeto</span>
-          <textarea name="mensagem" rows="4" required placeholder="Prazo, objetivo e o que precisa ser entregue."></textarea>
-        </label>
-        <button class="btn btn-primary" type="submit">Enviar pedido</button>
-        <p class="form-note">Abre o WhatsApp com o briefing pronto.</p>
-      </form>
-    </aside>
-  </div>
-</section>
-<section class="resume" id="curriculo">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="eyebrow">Currículo</p>
-      <h2>EXPERIÊNCIA<br>E FORMAÇÃO</h2>
-    </div>
-    <div class="resume-grid">
-      <div>
-        <h3 class="block-title">Experiência profissional</h3>
-        <ol class="timeline">
-          <li><span class="dot"></span><p class="when">04/2022 — 04/2026 · São Paulo</p><h4>Palestrante e Comunicador</h4><p>Palestras para jovens e adultos fora do estado natal. Experiência que fortaleceu a oratória e a apresentação de ideias em público.</p></li>
-          <li><span class="dot"></span><p class="when">05/2019 — 01/2022 · Recife</p><h4>Facto Comunicação — Redator / Social Media</h4><p>Redação de notícias regionais e nacionais e fechamento de acordos publicitários para o site.</p></li>
-          <li><span class="dot"></span><p class="when">08/2020 — 12/2021 · Remoto (Alemanha)</p><h4>European Management Software Group — Parcerias</h4><p>Negociação e fechamento de acordos publicitários com grupo europeu de software de gestão, voltados a sites de tecnologia. Contrato de 1 ano.</p></li>
-          <li><span class="dot"></span><p class="when">06/2020 — 11/2021 · Portugal</p><h4>Bet365 — Parcerias e Publicidade</h4><p>Fechamento de parcerias publicitárias com grandes portais em nome da plataforma internacional de apostas.</p></li>
-          <li><span class="dot"></span><p class="when">09/2018 — 05/2019 · Remoto (China)</p><h4>Snaptube — Redator Publicitário</h4><p>Produção de textos publicitários para um dos aplicativos Android mais utilizados do mundo.</p></li>
-          <li><span class="dot"></span><p class="when">07/2017 — 08/2018 · Minas Gerais</p><h4>SuperJogosClick — Games / Redator</h4><p>Conteúdo sobre jogos, publicação e teste de títulos, além de acordos publicitários com marcas.</p></li>
-        </ol>
-      </div>
-      <div class="resume-side">
-        <div class="panel">
-          <h3 class="block-title">Competências</h3>
-          <ul class="bars">
-            <li><span>Copywriting / Redação</span><i style="--v:94%"></i></li>
-            <li><span>Tráfego pago Meta Ads</span><i style="--v:90%"></i></li>
-            <li><span>Marketing digital</span><i style="--v:88%"></i></li>
-            <li><span>Desenvolvimento web</span><i style="--v:82%"></i></li>
-            <li><span>Figma / Framer</span><i style="--v:78%"></i></li>
-            <li><span>Social media</span><i style="--v:86%"></i></li>
-            <li><span>Conteúdo com IA</span><i style="--v:80%"></i></li>
-            <li><span>Google Analytics / AdSense</span><i style="--v:78%"></i></li>
-          </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#171918" />
+    <meta name="description" content="David Martins transforma comunicação, conteúdo e tráfego pago em presença digital mais clara para marcas e negócios." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content="David Martins — Comunicação que move" />
+    <meta property="og:description" content="Copywriting, conteúdo, Meta Ads e experiências web para negócios que querem ser entendidos e escolhidos." />
+    <meta property="og:url" content="https://martins-web-portfolio.vercel.app/" />
+    <meta name="twitter:card" content="summary" />
+    <title>David Martins — Comunicação que move</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="site-header" id="topo">
+      <a class="brand" href="#topo" aria-label="David Martins, início">
+        <span class="brand-mark">DM</span>
+        <span class="brand-copy"><strong>David Martins</strong><small>Comunicação que move</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+        <a href="#servicos">O que faço</a>
+        <a href="#processo">Como trabalho</a>
+        <a href="#experiencia">Experiência</a>
+        <a class="nav-cta" href="https://wa.me/5511975321113?text=Ol%C3%A1%20David%2C%20vim%20pelo%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20um%20projeto." target="_blank" rel="noreferrer">Falar sobre um projeto <span>↗</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section-shell">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="pulse"></span> Disponível para novos projetos · Recife/PE</div>
+          <h1>Sua marca tem algo bom para dizer. <em>Eu transformo isso em atenção — e atenção em ação.</em></h1>
+          <p class="hero-lede">Comunicação estratégica, conteúdo e campanhas digitais para negócios que querem ser entendidos, lembrados e escolhidos.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://wa.me/5511975321113?text=Ol%C3%A1%20David%2C%20vim%20pelo%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20um%20projeto." target="_blank" rel="noreferrer">Vamos tirar sua ideia do rascunho <span>↗</span></a>
+            <a class="text-link" href="#servicos">Ver como posso ajudar <span>↓</span></a>
+          </div>
+          <div class="hero-proof">
+            <div><strong>+10</strong><span>anos criando<br />comunicação</span></div>
+            <div><strong>4</strong><span>frentes para<br />fazer avançar</span></div>
+            <div><strong>1</strong><span>conversa direta<br />com quem executa</span></div>
+          </div>
         </div>
-        <div class="panel">
-          <h3 class="block-title">O que eu faço</h3>
-          <ul class="chips">
-            <li>Tráfego pago Meta Ads</li>
-            <li>Facebook e Instagram Ads</li>
-            <li>Sites e landing pages</li>
-            <li>UI no Figma e Framer</li>
-            <li>Copy para campanhas</li>
-            <li>Conteúdo editorial</li>
-            <li>Parcerias publicitárias</li>
-            <li>Podcasts e audiovisual</li>
-          </ul>
+        <div class="hero-visual reveal reveal-delay" aria-label="Resumo visual do posicionamento profissional">
+          <div class="visual-orbit orbit-one"></div>
+          <div class="visual-orbit orbit-two"></div>
+          <div class="signal-card">
+            <div class="signal-top"><span class="status-dot"></span><span>SINAL / PROPOSTA</span><span class="signal-index">01—04</span></div>
+            <div class="signal-shape" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+            <p>Clareza para explicar.<br /><strong>Direção para converter.</strong></p>
+            <div class="signal-footer"><span>copy</span><span>conteúdo</span><span>performance</span></div>
+          </div>
+          <div class="floating-note note-top"><span class="note-line"></span><span>ideia → presença</span></div>
+          <div class="floating-note note-bottom"><span class="note-number">02</span><span>conteúdo<br />com intenção</span></div>
         </div>
-        <div class="panel">
-          <h3 class="block-title">Formação</h3>
-          <p class="edu-title">Escola Dom Bosco</p>
-          <p class="muted">Ensino Médio Completo · 01/2015 — 12/2017 · Recife</p>
-          <p class="edu-sub">Estudos complementares</p>
-          <ul class="mini">
-            <li>Do Figma ao Framer com IA — 7ª edição (16h)</li>
-            <li>Fundamentos de segurança cibernética — IBM / Santander</li>
-            <li>Consultoria em TI</li>
-            <li>Segurança da Informação</li>
-            <li>Marketing Digital</li>
-            <li>Google Analytics e AdSense</li>
-            <li>Pacote Microsoft Office</li>
-          </ul>
+      </section>
+
+      <section class="marquee-strip" aria-label="Áreas de atuação">
+        <div class="marquee-track"><span>ESTRATÉGIA</span><i></i><span>CONTEÚDO</span><i></i><span>PERFORMANCE</span><i></i><span>EXPERIÊNCIA</span><i></i><span>ESTRATÉGIA</span><i></i><span>CONTEÚDO</span><i></i><span>PERFORMANCE</span><i></i><span>EXPERIÊNCIA</span><i></i></div>
+      </section>
+
+      <section class="intro section-shell section-pad">
+        <div class="section-kicker">01 / Ponto de partida</div>
+        <div class="intro-grid">
+          <h2>Presença digital não é estar em todo lugar. É saber <span>por que</span> alguém deve parar para ouvir.</h2>
+          <div class="intro-aside"><p>Meu trabalho começa antes do post, do anúncio ou do site. Começa entendendo a oferta, o público e a ação que precisa acontecer depois da atenção.</p><a class="arrow-link" href="#contato">Quero conversar sobre meu negócio <span>↗</span></a></div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="cert" id="certificados">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="eyebrow">Certificados</p>
-      <h2>FORMAÇÃO<br>COMPLEMENTAR</h2>
-    </div>
-    <div class="cert-list">
-      <article class="cert-card cert-card-featured">
-        <p class="eyebrow">Setembro 2026 · 16 horas</p>
-        <h3>Do Figma ao Framer com IA</h3>
-        <figure class="cert-photo">
-          <a href="CERTIFICADO.jpeg" target="_blank" rel="noopener">
-            <img src="CERTIFICADO.jpeg" alt="Certificado de conclusão — Do Figma ao Framer com IA, 7ª edição — David Martins Dos Santos Junior" width="1600" height="1000">
-          </a>
-        </figure>
-        <p class="muted">7ª edição · Workshop · 05 e 06 de setembro de 2026</p>
-        <p>Workshop teórico-prático de desenvolvimento de interfaces com método ágil: do Figma ao Framer, com inteligências artificiais. Prototipação, handoff e publicação de UI.</p>
-        <p class="serial">Instrutor: Kácio Filipe · Certificado de conclusão</p>
-        <p class="serial">David Martins Dos Santos Junior</p>
-      </article>
-      <article class="cert-card">
-        <p class="eyebrow">Agosto 2026 · 1,5 hora</p>
-        <h3>Fundamentos de segurança cibernética</h3>
-        <figure class="cert-photo">
-          <a href="CERTIFICADO%20IBM.jpg" target="_blank" rel="noopener">
-            <img src="CERTIFICADO%20IBM.jpg" alt="Certificado IBM / Santander Open Academy — Fundamentos de segurança cibernética — David Martins Dos Santos Júnior" width="1600" height="900">
-          </a>
-        </figure>
-        <p class="muted">IBM / Santander Open Academy · 14 de agosto de 2026</p>
-        <p>Curso de 1,5 hora, 2 módulos e autoavaliação. Conteúdo desenvolvido pela IBM: fundamentos de segurança cibernética para pessoas e organizações.</p>
-        <p class="serial">Série: OA-2026-0814003062377</p>
-      </article>
-    </div>
-  </div>
-</section>
-<section class="contact" id="contato">
-  <div class="wrap contact-inner">
-    <p class="eyebrow">Contato</p>
-    <h2>VAMOS CONVERSAR<br>SOBRE O PRÓXIMO<br>PROJETO.</h2>
-    <p class="lead">Recife, Pernambuco. Disponível para desenvolvimento web, redação, tráfego pago na Meta e conteúdo.</p>
-    <div class="contact-actions">
-      <a class="btn btn-primary" href="#orcamento">Pedir orçamento</a>
-      <a class="btn btn-ghost" href="https://wa.me/5511975321113?text=Olá%20David,%20vim%20pelo%20portfólio." target="_blank" rel="noopener">WhatsApp</a>
-    </div>
-    <dl class="contact-list">
-      <div><dt>Telefone</dt><dd><a href="tel:+5511975321113">(11) 97532-1113</a></dd></div>
-      <div><dt>E-mail</dt><dd><a href="mailto:davidmartins1399@gmail.com">davidmartins1399@gmail.com</a></dd></div>
-      <div><dt>Local</dt><dd>Recife, Pernambuco, Brasil</dd></div>
-    </dl>
-  </div>
-</section>
-</main>
-<footer>
-  <div class="wrap footer-row">
-    <strong class="logo"><img src="logo-david-martins.png" alt="" width="28" height="28">David Martins</strong>
-    <span>© 2026 · Desenvolvedor Web e Redator</span>
-  </div>
-</footer>
-<script src="script.js"></script>
-</body>
+      </section>
+
+      <section class="services section-shell section-pad" id="servicos">
+        <div class="section-heading"><div><div class="section-kicker">02 / O que faço</div><h2>Serviços para transformar <em>intenção</em> em presença.</h2></div><p>Você não precisa contratar uma agência inteira para dar o próximo passo. Precisa de clareza, repertório e alguém que faça acontecer.</p></div>
+        <div class="service-grid">
+          <article class="service-card featured"><div class="service-number">01</div><div class="service-icon">✦</div><h3>Copywriting & conteúdo</h3><p>Textos que organizam sua mensagem e dão vontade de continuar lendo — da legenda à campanha.</p><div class="service-tags"><span>legendas</span><span>páginas</span><span>campanhas</span></div></article>
+          <article class="service-card"><div class="service-number">02</div><div class="service-icon">↗</div><h3>Meta Ads</h3><p>Campanhas no Facebook e Instagram com público, criativo e orçamento pensados para o objetivo certo.</p><div class="service-tags"><span>estratégia</span><span>setup</span><span>otimização</span></div></article>
+          <article class="service-card"><div class="service-number">03</div><div class="service-icon">⌁</div><h3>Sites & landing pages</h3><p>Páginas que explicam o valor do seu negócio e conduzem o visitante até o próximo passo.</p><div class="service-tags"><span>estrutura</span><span>texto</span><span>web</span></div></article>
+          <article class="service-card"><div class="service-number">04</div><div class="service-icon">◌</div><h3>Social media</h3><p>Conteúdo com linha editorial, consistência e uma voz que faz sentido para a sua marca.</p><div class="service-tags"><span>planejamento</span><span>roteiro</span><span>direção</span></div></article>
+          <article class="service-card"><div class="service-number">05</div><div class="service-icon">▱</div><h3>UI no Figma/Framer</h3><p>Protótipos e interfaces que deixam sua ideia mais tangível antes de virar produto.</p><div class="service-tags"><span>wireframe</span><span>protótipo</span><span>handoff</span></div></article>
+          <article class="service-card"><div class="service-number">06</div><div class="service-icon">⟿</div><h3>Parcerias & mídia</h3><p>Negociação e oportunidades de divulgação para conectar sua marca a públicos relevantes.</p><div class="service-tags"><span>prospecção</span><span>negociação</span><span>mídia</span></div></article>
+        </div>
+      </section>
+
+      <section class="fit section-shell section-pad">
+        <div class="fit-card"><div class="section-kicker">03 / Para quem é</div><h2>Para negócios que já têm valor — mas ainda não estão conseguindo <span>mostrar isso.</span></h2><a class="button button-dark" href="#contato">Ver se faz sentido para você <span>↗</span></a></div>
+        <div class="fit-list"><div class="fit-item"><span>01</span><div><strong>Você explica demais</strong><p>Sua oferta é boa, mas o cliente não entende rápido o que você resolve.</p></div></div><div class="fit-item"><span>02</span><div><strong>Você aparece sem direção</strong><p>Há posts, anúncios ou ideias soltas, mas falta uma linha que conecte tudo.</p></div></div><div class="fit-item"><span>03</span><div><strong>Você quer um próximo passo</strong><p>Precisa de uma página, campanha ou mensagem que ajude a gerar conversas.</p></div></div></div>
+      </section>
+
+      <section class="process section-shell section-pad" id="processo">
+        <div class="section-heading"><div><div class="section-kicker">04 / Como trabalho</div><h2>Sem reunião que poderia ser um e-mail. <em>Sem mistério.</em></h2></div><p>Um processo enxuto, com escopo claro e comunicação direta do primeiro contato à entrega.</p></div>
+        <div class="process-line"><div class="process-step"><span>01</span><h3>Conversa</h3><p>Você conta o contexto, o objetivo e o que já tentou.</p></div><div class="process-step"><span>02</span><h3>Diagnóstico</h3><p>Eu organizo o problema e proponho o caminho mais útil.</p></div><div class="process-step"><span>03</span><h3>Execução</h3><p>Texto, campanha, página ou conteúdo saem do papel.</p></div><div class="process-step"><span>04</span><h3>Próximo passo</h3><p>Você recebe clareza sobre o que foi feito e como continuar.</p></div></div>
+      </section>
+
+      <section class="experience section-shell section-pad" id="experiencia">
+        <div class="section-kicker">05 / Experiência que dá contexto</div>
+        <div class="experience-grid"><div><h2>Uma trajetória entre <span>palavra, negócio e internet.</span></h2><p class="experience-lede">Antes de falar em métricas, eu gosto de falar em contexto. Já escrevi, apresentei, negociei e construí presença digital em diferentes mercados.</p><a class="arrow-link" href="https://www.linkedin.com/in/david-martins-jr-126a6b221/" target="_blank" rel="noreferrer">Ver perfil no LinkedIn <span>↗</span></a></div><div class="timeline"><div class="timeline-item"><span>2022—2026</span><div><strong>Palestrante & comunicador</strong><p>Oratória, apresentação de ideias e comunicação com públicos diversos.</p></div></div><div class="timeline-item"><span>2019—2022</span><div><strong>Redação & social media</strong><p>Conteúdo editorial, notícias e acordos publicitários na Facto Comunicação.</p></div></div><div class="timeline-item"><span>2017—2021</span><div><strong>Parcerias internacionais</strong><p>Negociações e conteúdo para empresas de tecnologia e mídia da Europa, Ásia e Brasil.</p></div></div></div></div>
+        <div class="toolkit"><span>O que levo para o projeto</span><div><b>Copy</b><b>Meta Ads</b><b>Web</b><b>Figma</b><b>IA aplicada</b><b>Estratégia</b></div></div>
+      </section>
+
+      <section class="contact section-shell" id="contato">
+        <div class="contact-card"><div class="contact-top"><div class="section-kicker">06 / Próximo movimento</div><span class="contact-mark">DM</span></div><h2>Se você tem uma ideia, uma oferta ou um problema de comunicação, <em>vamos colocar na mesa.</em></h2><p>Me conte em poucas linhas o que você precisa. Eu respondo pelo WhatsApp com uma leitura inicial e os próximos passos.</p><div class="contact-actions"><a class="button button-light" href="https://wa.me/5511975321113?text=Ol%C3%A1%20David%2C%20vim%20pelo%20seu%20portf%C3%B3lio.%20Tenho%20um%20projeto%20e%20gostaria%20de%20conversar." target="_blank" rel="noreferrer">Chamar no WhatsApp <span>↗</span></a><a class="contact-email" href="mailto:davidmartins1399@gmail.com">davidmartins1399@gmail.com</a></div></div>
+        <form class="brief-form" id="brief-form"><div class="form-heading"><span>Ou envie um briefing rápido</span><small>Abre o WhatsApp com sua mensagem pronta.</small></div><label>Seu nome<input name="name" type="text" placeholder="Como posso te chamar?" required /></label><label>O que você precisa?<select name="service" required><option value="" disabled selected>Escolha uma frente</option><option>Copywriting e conteúdo</option><option>Meta Ads</option><option>Site ou landing page</option><option>Social media</option><option>UI no Figma/Framer</option><option>Parcerias e mídia</option><option>Ainda não sei</option></select></label><label>Conte um pouco<textarea name="message" rows="4" placeholder="Qual é o objetivo ou desafio?" required></textarea></label><button class="button button-primary" type="submit">Enviar briefing pelo WhatsApp <span>↗</span></button><p class="form-feedback" id="form-feedback" role="status"></p></form>
+      </section>
+    </main>
+
+    <footer class="site-footer section-shell"><div class="footer-brand"><span class="brand-mark">DM</span><span>David Martins<br /><small>Comunicação que move</small></span></div><p>Recife · Pernambuco · Brasil</p><div class="footer-links"><a href="https://www.linkedin.com/in/david-martins-jr-126a6b221/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="mailto:davidmartins1399@gmail.com">E-mail ↗</a><a href="#topo">Voltar ao topo ↑</a></div></footer>
+    <script src="/script.js"></script>
+  </body>
 </html>
